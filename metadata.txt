@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=1 Parcel Checker
+qgisMinimumVersion=2.18
+description=To convert cad plan to shapfile
+version=0.1
+author=Prabhath W.J.K.A.N. Survey Dept. of Sri Lanka
+email=npjasinghe@gmail.com
+
+about=This tool support you to find the error polygons that have no labels, technically not closed polygons. If any errors the subject polygons are highlighted and datails of the plan can be seen in the auto genarated text file in your DXF folder. Please read the guidelines before run the tool. .............. Conditions to prepare the DXF file .................................... - Data content compulsorily compatible to the SDR layers Circular’s no SGO/R&D/G/C/4 on 05.09.2012. - DXF Drawing must be named with plan Number (Eg. 82001204 for cadaster) - Layers should turn on. - Don’t use circles to show points. - Don’t use multiline text. - Data containing as blocks & insert must be remove. - Create a layer named “LOTNO” and copy "TEXT-lOT" numbers to that layer. - Origin of every lot numbers in the “LOTNO” layer must be within its own perimeter (by scaling the lot numbers can make smaller).
+
+tracker=http://bugs
+repository=http://repo
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python
+
+homepage=http://homepage
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
